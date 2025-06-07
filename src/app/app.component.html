@@ -1,1 +1,2 @@
-<app-consulta-cripto/>
+<app-login *ngIf="!usuarioLogado" (login)="aologar()"/>
+<app-consulta-cripto *ngIf="usuarioLogado"/>
